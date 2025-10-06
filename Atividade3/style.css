@@ -295,3 +295,85 @@ margin:6px 0;
 .pacote__maisvendidos {
   background: var(--cor-terciaria); 
 }
+
+.campos__essencial{
+  display: flex;
+  margin: 0 auto;
+  color: var(--cor-secundaria);
+  justify-content: center;
+  margin-bottom: 26px;
+  border: 2px solid;
+
+}
+
+.conteudo__descricaoform{
+  color: var(--cor-secundaria);
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 22px;
+  gap: 6px;
+  margin-bottom:24px;
+  text-align: center;
+}
+
+.conteudo__tituloform{
+  text-align: center;
+  font-size: 32px;
+  color: var(--cor-secundaria);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.campo__sexo{
+  font-family: var(--font-primaria);
+  font-size: 15px;
+  display: flex;
+  gap: 25px;
+  margin: 0 auto;
+  color: var(--cor-secundaria);
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+.pagina__cadastro{
+  background-color: var(--cor-hover);
+}
+
+.form__cadastro{
+width: 100vw;
+display: flex;
+justify-content: center;
+color: var(--cor-secundaria);
+}
+
+form{
+  flex-direction: column;
+  width: 40vw;
+  display:flex ;
+  justify-content: center;
+
+}
+
+.cadastro__Cliente input,
+.cadastro__Cliente select,
+.cadastro__Cliente textarea {
+  background-color: #8c8c8c; 
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.botoes__form{
+  color: var(--cor-terciaria);
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.cadastro__Cliente{
+  background-color: var(--cor-hover);
+  min-height: 100vh; 
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Agência Viagem Feliz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina__cadastro">
+
+    <div class="cadastro__Cliente">
+    <h1 class="conteudo__tituloform">Cadastro</h1>
+
+            <p class="conteudo__descricaoform">Para se cadastrar na nossa agência, é necessário responder aos seguintes campos:</p>
+
+            <div class="form__cadastro">
+                <form action="GET">
+                    <div class="campo__essencial">
+                    <label>Nome:</label>
+                    <input type="text" name="txtnome" size="50" title="Digite seu nome" maxlength="40">
+                    <br><br>
+                    </div>
+                    <div class="campo__sexo">
+                    <input type="radio" name="radSexo" value="M"> Masculino
+                    <input type="radio" name="radSexo" value="F"> Feminino
+                    <br><br>
+                    </div>
+    
+                    <div class="cliente__escolhe">
+                    <label>Escolha o tipo de cliente que você quer ser:</label>
+                    <br><br>
+                    <input type="checkbox" name="chkCliente" value="preminum"> Premium viagens
+                    <br>
+                    <input type="checkbox" name="chkCursos" value="platino"> Platino viagens
+                    <br>
+                    <input type="checkbox" name="chkCursos" value="economico"> Economico Viagens
+                    </div>
+                    <br><br>
+                    <label>Preferências:</label>
+                    <br>
+                    <select name="optTurma">
+                        <option value="Praias">Praia</option>
+                        <option value="Campo">Campo</option>
+                        <option value="Cidade">Cidade</option>
+                    </select>
+                    <br><br>
+                    <label>Faça sua sugestão:</label>
+                    <br>
+                    <textarea name="txtSugestao" rows="10" cols="50"></textarea>
+                    <br><br>
+                    <label>Data de Nascimento:</label>
+                    <br>
+                    <input type="date" name="txtData" maxlength="40">
+                    <br>
+                    <label>E-mail:</label>
+                    <br>
+                    <input type="email" name="txtEmail" maxlength="30">
+                    <br><br>
+                    <div class="botoes__form">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                    </div>
+
+                </form>
+            
+            </div>
+            </form>
+    </div>
+    <footer class="apresentacao__footer"> 
+        <p class="apresentacao__footer__texto"> Agência Viagem Feliz </p>
+        <p class="apresentacao__footer__texto"> Vitória da Conquista - Bahia, Brasil </p>
+        <p class="apresentacao__footer__texto"> Cepedi </p>
+    </footer>
+
+</body>
+</html>
