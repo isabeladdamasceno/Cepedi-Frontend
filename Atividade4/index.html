@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - js</title>
+</head>
+<body>
+    <h1>Melhores Doces do Mundo</h1>
+
+                <form id="formCor">
+                    <select id="selecionaCor">
+                        <option value="bombom de uva">Bombom de uva</option>
+                        <option value="bolo de chocolate">Bolo de chocolate</option>
+                        <option value="doce de leite">Doce de Leite</option>
+                    </select>
+                  <button type="submit">Troca Cor</button>
+                </form>
+
+                <script>
+                    document.getElementById("formCor").addEventListener('submit', function(event){
+                        event.preventDefault();
+
+                        var cor = document.getElementById('selecionaCor').value;
+
+                        switch (cor) {
+                            case "bombom de uva":
+                                document.body.style.background = "green";
+                                document.querySelector('h1').textContent = "Bombom de uva"
+                                break;
+                            case "bolo de chocolate":
+                                document.body.style.background = "gray";
+                                document.querySelector('h1').textContent = "Bolo de chocolate"
+                                break;
+                            case "doce de leite":
+                                document.body.style.background = "pink";
+                                document.querySelector('h1').textContent = "Doce de Leite"
+                                break;
+                    
+                            default:
+                                document.body.style.background = "white";
+                                break;
+                        }
+                    });
+
+                </script>
+</body>
+</html>
