@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Agência Viagem Feliz</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js" type="module"></script>
 </head>
 <body class="pagina__cadastro">
 
@@ -17,31 +18,36 @@
                 <form action="GET">
                     <div class="campo__essencial">
                     <label>Nome:</label>
-                    <input type="text" name="txtnome" size="50" title="Digite seu nome" maxlength="40">
+                    <input name="nome" id="nome" size="50" class="nome__campo" required type="text" minlength="3"/>
+                    <br><br>
+                    <span class="mensagem-erro"></span>
                     <br><br>
                     </div>
                     <div class="campo__sexo">
-                    <input type="radio" name="radSexo" value="M"> Masculino
-                    <input type="radio" name="radSexo" value="F"> Feminino
+                    <input type="radio" name="sexo" value="M" required> Masculino
+                    <input type="radio" name="sexo" value="F" required> Feminino
+                    <span class="mensagem-erro"></span>
                     <br><br>
                     </div>
     
                     <div class="cliente__escolhe">
                     <label>Escolha o tipo de cliente que você quer ser:</label>
                     <br><br>
-                    <input type="checkbox" name="chkCliente" value="preminum"> Premium viagens
+                    <input type="checkbox" name="cliente" value="preminum" required> Premium viagens
                     <br>
-                    <input type="checkbox" name="chkCursos" value="platino"> Platino viagens
+                    <input type="checkbox" name="cliente" value="platino" required> Platino viagens
                     <br>
-                    <input type="checkbox" name="chkCursos" value="economico"> Economico Viagens
+                    <input type="checkbox" name="cliente" value="economico" required> Economico Viagens
+                    <span class="mensagem-erro"></span>
                     </div>
                     <br><br>
                     <label>Preferências:</label>
                     <br>
-                    <select name="optTurma">
+                    <select name="tipo" required>
                         <option value="Praias">Praia</option>
                         <option value="Campo">Campo</option>
                         <option value="Cidade">Cidade</option>
+                        <span class="mensagem-erro"></span>
                     </select>
                     <br><br>
                     <label>Faça sua sugestão:</label>
@@ -50,11 +56,13 @@
                     <br><br>
                     <label>Data de Nascimento:</label>
                     <br>
-                    <input type="date" name="txtData" maxlength="40">
+                    <input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" required type="date" maxlength="40" minlength="2"/>
+                    <span class="mensagem-erro"></span>
                     <br>
                     <label>E-mail:</label>
                     <br>
-                    <input type="email" name="txtEmail" maxlength="30">
+                    <input type="email" name="email" maxlength="30" required>
+                    <span class="mensagem-erro"></span>
                     <br><br>
                     <div class="botoes__form">
                     <input type="submit" value="Enviar">

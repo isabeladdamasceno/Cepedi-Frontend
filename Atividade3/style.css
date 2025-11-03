@@ -353,6 +353,10 @@ form{
 
 }
 
+.mensagem-erro {
+    color: red;
+}
+
 .cadastro__Cliente input,
 .cadastro__Cliente select,
 .cadastro__Cliente textarea {
