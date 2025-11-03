@@ -56,9 +56,8 @@ camposDoFormulario.forEach((campo) => {
 
     campo.addEventListener('blur', ()=> verificaCampo(campo));
 
-
-})
-
+    campo.addEventListener('change', () => verificaCampo(campo)); 
+});
 
 function verificaCampo (campo){
 
@@ -92,7 +91,8 @@ function verificaCampo (campo){
         }
     })
 
-    const mensagemErro = campo.parentNode.querySelector('.mensagem-erro');
+    const mensagemErro = campo.closest('div').querySelector('.mensagem-erro');
+
     const validadorDeInput = campo.checkValidity();
     
     if (mensagemErro) { 

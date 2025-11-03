@@ -1,6 +1,6 @@
 export default function validaSexo(campo) {
 
-    const sexos = document.querySelectorAll('sexo');
+    const sexos = document.querySelectorAll('[name="sexo"]');
     const algumSelecionado = Array.from(sexos).some(sexo => sexo.checked);
     
     if (!algumSelecionado) {
