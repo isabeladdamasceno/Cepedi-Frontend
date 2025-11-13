@@ -1,0 +1,38 @@
+.Header{
+    width: 100vw;
+    height: 100vw;
+    background-image: linear-gradient(90deg, #b31c6f 35%, #FF8DA1);
+}
+
+.header-header{
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcoesHeader {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    
+}
+.opcao{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+    min-width: 120px;
+    color: #F06292;
+    
+}
+
+.iconesHeader{
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
