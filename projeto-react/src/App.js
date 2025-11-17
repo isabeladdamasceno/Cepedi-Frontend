@@ -1,14 +1,13 @@
 import './App.css';
 import Header from './componentes/header';
+import Pesquisa from './componentes/PesquisaContainer';
 
 function App() {
   return (
     <div className='App'>
-   <header className='App-header'>
 
     <Header></Header>
-    
-   </header>
+   <Pesquisa></Pesquisa>
 
    </div>
   );

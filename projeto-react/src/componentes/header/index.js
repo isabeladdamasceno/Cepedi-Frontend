@@ -5,7 +5,7 @@ import IconesHeader from '../../componentes/iconesHeader';
 
 function Header() {
   return (
-    <div className='Header'>
+
    <header className='header-header'>
     <Logo></Logo>
     <OpcoesHeader></OpcoesHeader>
@@ -13,7 +13,7 @@ function Header() {
 
    </header>
 
-   </div>
+ 
   );
 }
 
