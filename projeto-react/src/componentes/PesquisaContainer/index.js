@@ -1,8 +1,10 @@
-import './estilo.css';
-import Titulo from '../Titulo';
-import Subtitulo from '../Subtitulo';
-import { useState } from 'react';
-import { livros } from'./dadosPesquisa.js';
+import './estilo.css'
+import Titulo from '../Titulo'
+import Subtitulo from '../Subtitulo'
+import Resultado from '../Resultado'
+import { useState } from 'react'
+import { livros } from'./dadosPesquisa.js'
+
 
 function PesquisaContainer() {
   const [ livrosPesquisados, setLivrosPesquisados ] = useState([]);
@@ -19,14 +21,16 @@ function PesquisaContainer() {
       />
 
       {livrosPesquisados.map ( livro => (
-        <div>
-          <p>{livro.nome}</p>
-          <img src={livro.src} alt='livro'/>
-        </div>
-      ))}
+    <Resultado className="resultado-item" key={livro.id}>
+        <p>{livro.nome}</p>
+        <img src={livro.src} alt='livro'/>
+    </Resultado>
+))}
   </section>
 
     );
     
 }
 export default PesquisaContainer;
+
+
