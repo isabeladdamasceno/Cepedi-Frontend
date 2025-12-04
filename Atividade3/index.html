@@ -4,36 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Viagem Feliz</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        
+                        'primaria': '#000000',
+                        'secundaria': '#f6f6f6',
+                        'terciaria': '#22d4fd',
+                        'hover-bg': '#272727',
+                    },
+                    fontFamily: {
+
+                        'krona': ['Krona One', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Krona+One&display=swap');
+    </style>
 </head>
-<body>
-    <header class="cabecalho">
-        <nav class="menu">
-            <a class="menu__link" href="index.html">Home</a>
-            <a class="menu__link" href="cadastro.html">Cadastro</a>
-            <a class="menu__link" href="produtos.html">Pacotes</a>
-            <a class="menu__link" href="maisvendidos.html">Mais Vendidos</a>
-            <a class="menu__link" href="falecomigo.html">Fale Comigo</a>
+<body class="bg-secundaria min-h-screen"> 
+    
+    <header class="w-full bg-terciaria shadow-md">
+        <nav class="max-w-7xl mx-auto flex gap-5 items-center justify-center p-4">
+            <a class="text-secundaria font-montserrat text-xl font-semibold px-3 py-2 rounded-lg hover:text-primaria hover:transform hover:translate-y-[-2px] transition duration-150 ease-in-out" href="index.html">Home</a>
+            <a class="text-secundaria font-montserrat text-xl font-semibold px-3 py-2 rounded-lg hover:text-primaria hover:transform hover:translate-y-[-2px] transition duration-150 ease-in-out" href="cadastro.html">Cadastro</a>
+            <a class="text-secundaria font-montserrat text-xl font-semibold px-3 py-2 rounded-lg hover:text-primaria hover:transform hover:translate-y-[-2px] transition duration-150 ease-in-out" href="produtos.html">Pacotes</a>
+            <a class="text-secundaria font-montserrat text-xl font-semibold px-3 py-2 rounded-lg hover:text-primaria hover:transform hover:translate-y-[-2px] transition duration-150 ease-in-out" href="maisvendidos.html">Mais Vendidos</a>
+            <a class="text-secundaria font-montserrat text-xl font-semibold px-3 py-2 rounded-lg hover:text-primaria hover:transform hover:translate-y-[-2px] transition duration-150 ease-in-out" href="falecomigo.html">Fale Comigo</a>
         </nav>
     </header>
 
-    <main class="conteudo">
-        <section class="conteudo__texto">
-            <h1 class="conteudo__titulo">Bem-vindo à <strong class="titulo__destaque">Agência Viagem Feliz</strong></h1>
-            <p class="conteudo__descricao">
-                Descubra destinos incríveis com preços imperdíveis!  
+    <main class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-7 items-center my-7 px-4">
+        
+        <section class="flex-1 max-w-xl"> 
+            
+            <h1 class="font-krona text-terciaria text-3xl mb-4">
+                Bem-vindo à <strong class="text-terciaria">Agência Viagem Feliz</strong>
+            </h1>
+            
+            <p class="text-terciaria font-montserrat text-2xl space-y-2 mb-2">
+                Descubra destinos incríveis com preços imperdíveis! 
+            </p>
+            <p class="text-terciaria font-montserrat text-2xl space-y-2 mb-2">
                 Temos pacotes exclusivos para você viajar com conforto e segurança!!!
             </p>
         </section>
 
-        <section class="conteudo__imagem">
-            <img src="assets/viagembrasil.jpg" alt="Imagem de viagem paradisíaca">
+        <section class="flex-shrink-0 w-full max-w-sm lg:max-w-md"> 
+            <img src="assets/viagembrasil.jpg" alt="Imagem de viagem paradisíaca" class="w-full h-64 object-cover rounded-xl shadow-xl border-4 border-white">
         </section>
     </main>
-    <footer class="apresentacao__footer"> 
-        <p class="apresentacao__footer__texto"> Agência Viagem Feliz </p>
-        <p class="apresentacao__footer__texto"> Vitória da Conquista - Bahia, Brasil </p>
-        <p class="apresentacao__footer__texto"> Cepedi </p>
+    
+    <footer class="bg-hover-bg p-5 text-center text-white text-sm"> 
+        <p class="my-1"> Agência Viagem Feliz </p>
+        <p class="my-1"> Vitória da Conquista - Bahia, Brasil </p>
+        <p class="my-1"> Cepedi </p>
     </footer>
 </body>
 </html>
