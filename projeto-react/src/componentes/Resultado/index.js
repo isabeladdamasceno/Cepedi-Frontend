@@ -1,7 +1,9 @@
 import './estilo.css';
 
-export default function Resultado({children}){
-      return <div className='resultadoPesquisa'>{children}</div>
+export default function Resultado({children, onClick}){
+      return <div className='resultadoPesquisa' onClick={onClick}>
+            {children}
+            </div>
 }
    
 

@@ -1,0 +1,25 @@
+.AppContainer{
+width: 100vw;
+height: 100vh;
+background-image: linear-gradient(90deg,#002F52 35%,#326589 165%);
+}
+
+.ResultadoContainer{
+display: flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.Resultado{
+display: flex;
+justify-content:center;
+align-items:center;
+margin:20px 0;
+cursor: pointer;
+text-align:center;
+padding: 0 100px;
+}
+
+
+
+    

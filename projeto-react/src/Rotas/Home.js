@@ -1,10 +1,10 @@
-import './App.css';
-import CardRecomenda from './componentes/CardRecomenda';
-import Pesquisa from './componentes/PesquisaContainer';
-import UltimosLancamentos from './componentes/UltimosLancamentos';
-import livroRecomendado from './imagens/livro4.png';
+import './Home.css';
+import CardRecomenda from '../componentes/CardRecomenda';
+import Pesquisa from '../componentes/PesquisaContainer';
+import UltimosLancamentos from '../componentes/UltimosLancamentos';
+import livroRecomendado from '../imagens/livro4.png';
 
-function App() {
+function Home() {
   return (
     <div className='App'>
 
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
