@@ -11,7 +11,7 @@ function Home() {
    <Pesquisa></Pesquisa>
    <UltimosLancamentos></UltimosLancamentos>
    <CardRecomenda 
-       titulo="Talvez voce se interesse por..."
+       titulo="Talvez você se interesse por..."
         subtiulo="Angular 11"
         descrição="Construindo uma aplicação com a plataforma Google"
         img={livroRecomendado}>

@@ -24,13 +24,15 @@
 
 .cardSubtitulo {
     color: #003b5c;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 15px;
+    margin-left: 20px;
 }
 
 .cardDescricao {
-    font-size: 18px;
+    font-size: 22px;
+    margin-left: 20px;
 }
 
 .cardImagem {

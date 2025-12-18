@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
+    color: #fff;
 }
 
 .novos_livros {
@@ -13,6 +14,10 @@
 }
 
 .novos_livros img {
-    width: 150px;
+    width: 200px;
     height: auto;
+    padding: 20px;
+    background-color: #808080;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }

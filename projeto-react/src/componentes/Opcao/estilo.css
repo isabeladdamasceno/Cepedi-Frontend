@@ -1,7 +1,6 @@
-.opcoesHeader {
-    display: flex;
-    margin: 0 auto;
-    gap: 30px;
+.opcoesHeader a {
+    text-decoration: none; 
+    color: #002F52;
     font-weight: 700;
 }
 
@@ -16,6 +15,5 @@
     cursor: pointer;
     min-width: 120px;
     color: #326589;
-   
-
+    
 }
